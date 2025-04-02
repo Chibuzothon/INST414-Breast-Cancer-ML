@@ -1,0 +1,32 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "breast_cancer_ml"
+version = "0.0.1"
+description = "Machine Learning Classification model that is able to detect if a breast cancer tumor is malignant or benign"
+authors = [
+  { name = "Your name (or your organization/company/team)" },
+]
+
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    
+]
+requires-python = "~=3.10.0"
+
+
+[tool.ruff]
+line-length = 99
+src = ["breast_cancer_ml"]
+include = ["pyproject.toml", "breast_cancer_ml/**/*.py"]
+
+[tool.ruff.lint]
+extend-select = ["I"]  # Add import sorting
+
+[tool.ruff.lint.isort]
+known-first-party = ["breast_cancer_ml"]
+force-sort-within-sections = true
+
