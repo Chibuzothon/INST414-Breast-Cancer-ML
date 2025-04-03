@@ -37,7 +37,7 @@ Import all the necessary languages, ML frameworks and
 
 
 ### Evaluating the models
-Use the evaluation metrics such as the
+Use evaluation metrics such as the accuracy, precision, recall, F1-score, and ROC- AUC to assess the model performance
 
 
 ### Reproducing results
