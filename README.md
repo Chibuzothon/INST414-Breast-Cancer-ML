@@ -34,7 +34,8 @@ This is a classification machine leanring model that determines if a breast canc
 1. Load the dataset
 2. Use standard Scaler to standardize the values
 3. Use mapping to set target feature values of benign to 0 and malignant to 1
-4. Use train_test_split to split the data into training and testing sets 
+4. Use train_test_split to split the data into training and testing sets
+   X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 ### Training the Models
 1. Train the model using the Scikit-Learn's classifiers
@@ -44,15 +45,21 @@ This is a classification machine leanring model that determines if a breast canc
 3. use cross_val_score and Kfold for model validation
 
 ### Evaluating the models
-Use evaluation metrics such as the accuracy, precision, recall, F1-score, and ROC- AUC to assess the model performance
+Use evaluation metrics such as accuracy, precision, recall, F1-score, and ROC-AUC to assess the model performance
 1. Compute performance metrics
 - Accuracy, Precision, Recall, and F1-score
-- Generate confusion matricies
+- Generate confusion matrices
 - Plot ROC curse and calculate AUC scores
 3. Use SHAP for model explainability analysis 
 
 
 ### Reproducing results
+1. Ensure that the preprocessing steps are consistent
+      - Save the transformation parameters
+      - Use joblib.dump
+2. Use fixed seed values when splitting the data
+3. Save the trained models for future reference or predictions
+  - use joblib.dump
 
 <a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
