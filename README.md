@@ -7,7 +7,7 @@ This is a classification machine leanring model that determines if a breast canc
 ### Programming Languages
 - Python 
 ### ML Frameworks
--Scikit-Leanr
+- Scikit-Learn
 - XGboost
 
 ### Libraries
