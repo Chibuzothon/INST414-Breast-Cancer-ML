@@ -22,11 +22,6 @@ This is a classification machine leanring model that determines if a breast canc
 - from sklearn.model_selection import KFold, GridSearchCV, train_test_split, cross_val_score  
 - from sklearn.preprocessing import StandardScaler  
 - import shap  
-- os
-- pandas
-- matplotlib.pl
-- numpy as np
-- import matplotlib.pyplot as plt
 
 ## Intructions
 
