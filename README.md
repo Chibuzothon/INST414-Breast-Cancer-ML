@@ -1,4 +1,19 @@
 # Breast_Cancer_Classifier
+## Description
+
+## Dependencies
+
+## Intructions
+
+### Setting up the environment 
+
+### Running the data processing pipeline
+
+### Evaluating the models
+
+
+
+### Reproducing results
 
 <a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
