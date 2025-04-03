@@ -36,6 +36,12 @@ This is a classification machine leanring model that determines if a breast canc
 3. Use mapping to set target feature values of benign to 0 and malignant to 1
 4. Use train_test_split to split the data into training and testing sets 
 
+### Training the Models
+1. Train the model using the Scikit-Learn's classifiers
+   - Random Forrest
+   - XGBoost
+2. Perform hyperparameter tuning with GridSerachCV
+3. use cross_val_score and Kfold for model validation
 
 ### Evaluating the models
 Use evaluation metrics such as the accuracy, precision, recall, F1-score, and ROC- AUC to assess the model performance
