@@ -13,36 +13,20 @@ This is a classification machine leanring model that determines if a breast canc
 ### Libraries
 - import os  
 - import pandas as pd  
-import numpy as np  
-import matplotlib.pyplot as plt  
-import seaborn as sns  
-from sklearn.metrics import accuracy_score, classification_report, confusion_matrix  
-from sklearn.metrics import precision_score, recall_score, f1_score  
-from sklearn.metrics import roc_curve, auc  
-from sklearn.model_selection import KFold, GridSearchCV, train_test_split, cross_val_score  
-from sklearn.preprocessing import StandardScaler  
-import shap  
+- import numpy as np  
+- import matplotlib.pyplot as plt  
+- import seaborn as sns  
+- from sklearn.metrics import accuracy_score, classification_report, confusion_matrix  
+- from sklearn.metrics import precision_score, recall_score, f1_score  
+- from sklearn.metrics import roc_curve, auc  
+- from sklearn.model_selection import KFold, GridSearchCV, train_test_split, cross_val_score  
+- from sklearn.preprocessing import StandardScaler  
+- import shap  
 - os
 - pandas
 - matplotlib.pl
 - numpy as np
 - import matplotlib.pyplot as plt
-import seaborn as sns
-from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
-from sklearn.metrics import precision_score, recall_score, f1_score
-from sklearn.metrics import roc_curve, auc
-from sklearn.metrics import accuracy_score, classification_report
-import shap
-from sklearn.model_selection import KFold, GridSearchCV, train_test_split, cross_val_score
-from sklearn.model_selection import train_test_split
-
-
-
-
-
-from sklearn.preprocessing import StandardScaler
-
-
 
 ## Intructions
 
