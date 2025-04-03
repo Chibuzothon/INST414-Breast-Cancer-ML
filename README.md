@@ -39,6 +39,11 @@ This is a classification machine leanring model that determines if a breast canc
 
 ### Evaluating the models
 Use evaluation metrics such as the accuracy, precision, recall, F1-score, and ROC- AUC to assess the model performance
+1. Compute performance metrics
+- Accuracy, Precision, Recall, and F1-score
+- Generate confusion matricies
+- Plot ROC curse and calculate AUC scores
+3. Use SHAP for model explainability analysis 
 
 
 ### Reproducing results
