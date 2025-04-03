@@ -1,6 +1,6 @@
 # Breast_Cancer_Classifier
 ## Description
-
+This is a classification machine leanring model that determines if a breast cancer tumor is malignant or benign. This model is trained on a dataset that is in a CSV format. The dataset contains information on the tumor. This project aims to use use Machine Leanring as a tool to validate breast cancer screening results. Current mammogram screenings have rates of false positive and false negative results, which can make screening results inaccurate. Using the ML model as a tool can help to create a more accurate and reliable approach to diagnosing and  treating breast cancer.
 ## Dependencies
 
 ## Intructions
