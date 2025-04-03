@@ -26,9 +26,15 @@ This is a classification machine leanring model that determines if a breast canc
 ## Intructions
 
 ### Setting up the environment 
-Import all the necessary languages, ML frameworks and
+- Use pip to install all the dependencies
+      - For example pip install pandas as pd
+- import the libraires 
 
 ### Running the data processing pipeline
+1. Load the dataset
+2. Use standard Scaler to standardize the values
+3. Use mapping to set target feature values of benign to 0 and malignant to 1
+4. Use train_test_split to split the data into training and testing sets 
 
 
 ### Evaluating the models
