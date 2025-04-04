@@ -23,7 +23,7 @@ This is a classification machine leanring model that determines if a breast canc
 - from sklearn.preprocessing import StandardScaler  
 - import shap  
 
-## Intructions
+## Instructions
 
 ### Setting up the environment 
 - Use pip to install all the dependencies
