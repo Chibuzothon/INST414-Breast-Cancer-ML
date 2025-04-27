@@ -1,0 +1,30 @@
+
+Random Forest Test Results:
+Accuracy: 0.9650
+              precision    recall  f1-score   support
+
+           0       0.97      0.98      0.97        89
+           1       0.96      0.94      0.95        54
+
+    accuracy                           0.97       143
+   macro avg       0.96      0.96      0.96       143
+weighted avg       0.97      0.97      0.96       143
+
+
+XGBoost Test Results:
+Accuracy: 0.9580
+              precision    recall  f1-score   support
+
+           0       0.97      0.97      0.97        89
+           1       0.94      0.94      0.94        54
+
+    accuracy                           0.96       143
+   macro avg       0.96      0.96      0.96       143
+weighted avg       0.96      0.96      0.96       143
+
+Random Forest Log Loss: 1.2603
+XGBoost Log Loss: 1.5123
+
+Random Forest Confusion Matrix:
+
+XGBoost Confusion Matrix:

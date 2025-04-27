@@ -1,0 +1,12 @@
+Top 10 most important features with PCA:
+             Feature  Importance
+     perimeter_worst    0.161492
+        radius_worst    0.127811
+ concave points_mean    0.120016
+          area_worst    0.070124
+concave points_worst    0.057068
+      perimeter_mean    0.052191
+           PC1_worse    0.050441
+      concavity_mean    0.049201
+         radius_mean    0.037133
+     concavity_worst    0.031847

@@ -1,0 +1,71 @@
+
+Evaluating Random Forest with Nested Cross-Validation
+
+Outer Fold 1/5
+  Best parameters: {'classifier__max_depth': 5, 'classifier__min_samples_leaf': 1, 'classifier__min_samples_split': 2, 'classifier__n_estimators': 150}
+  Validation accuracy: 0.9677
+  Test accuracy: 0.9419
+
+Outer Fold 2/5
+  Best parameters: {'classifier__max_depth': 5, 'classifier__min_samples_leaf': 1, 'classifier__min_samples_split': 2, 'classifier__n_estimators': 150}
+  Validation accuracy: 0.9619
+  Test accuracy: 0.9294
+
+Outer Fold 3/5
+  Best parameters: {'classifier__max_depth': 7, 'classifier__min_samples_leaf': 1, 'classifier__min_samples_split': 2, 'classifier__n_estimators': 100}
+  Validation accuracy: 0.9531
+  Test accuracy: 1.0000
+
+Outer Fold 4/5
+  Best parameters: {'classifier__max_depth': 7, 'classifier__min_samples_leaf': 1, 'classifier__min_samples_split': 6, 'classifier__n_estimators': 50}
+  Validation accuracy: 0.9677
+  Test accuracy: 0.9529
+
+Outer Fold 5/5
+  Best parameters: {'classifier__max_depth': 7, 'classifier__min_samples_leaf': 1, 'classifier__min_samples_split': 2, 'classifier__n_estimators': 50}
+  Validation accuracy: 0.9618
+  Test accuracy: 0.9647
+
+Nested CV Results:
+Mean Test Accuracy: 0.9578 ± 0.0241
+Test Accuracy Range: [0.9294, 1.0000]
+
+Evaluating XGBoost with Nested Cross-Validation
+
+Outer Fold 1/5
+  Best parameters: {'classifier__learning_rate': 0.1, 'classifier__max_depth': 3, 'classifier__min_samples_split': 2, 'classifier__n_estimators': 100}
+  Validation accuracy: 0.9765
+  Test accuracy: 0.9651
+
+Outer Fold 2/5
+  Best parameters: {'classifier__learning_rate': 0.3, 'classifier__max_depth': 5, 'classifier__min_samples_split': 2, 'classifier__n_estimators': 150}
+  Validation accuracy: 0.9648
+  Test accuracy: 0.9294
+
+Outer Fold 3/5
+  Best parameters: {'classifier__learning_rate': 0.3, 'classifier__max_depth': 5, 'classifier__min_samples_split': 2, 'classifier__n_estimators': 50}
+  Validation accuracy: 0.9707
+  Test accuracy: 1.0000
+
+Outer Fold 4/5
+  Best parameters: {'classifier__learning_rate': 0.1, 'classifier__max_depth': 3, 'classifier__min_samples_split': 2, 'classifier__n_estimators': 100}
+  Validation accuracy: 0.9736
+  Test accuracy: 0.9765
+
+Outer Fold 5/5
+  Best parameters: {'classifier__learning_rate': 0.3, 'classifier__max_depth': 3, 'classifier__min_samples_split': 2, 'classifier__n_estimators': 50}
+  Validation accuracy: 0.9618
+  Test accuracy: 0.9647
+
+Nested CV Results:
+Mean Test Accuracy: 0.9671 ± 0.0228
+Test Accuracy Range: [0.9294, 1.0000]
+
+Model Comparison:
+Random Forest: 0.9578 ± 0.0241
+XGBoost: 0.9671 ± 0.0228
+Plot saved to reports/nestedcv_model_comparison_plot.png
+Best parameters saved to reports/nestedcv_best_parameters.txt
+
+Best Random Forest parameters: {'classifier__max_depth': 5, 'classifier__min_samples_leaf': 1, 'classifier__min_samples_split': 2, 'classifier__n_estimators': 150}
+Best XGBoost parameters: {'classifier__learning_rate': 0.1, 'classifier__max_depth': 3, 'classifier__min_samples_split': 2, 'classifier__n_estimators': 100}

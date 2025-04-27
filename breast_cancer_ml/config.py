@@ -6,6 +6,8 @@ from loguru import logger
 # Load environment variables from .env file if it exists
 load_dotenv()
 
+RANDOM_STATE = 42
+
 # Paths
 PROJ_ROOT = Path(__file__).resolve().parents[1]
 logger.info(f"PROJ_ROOT path is: {PROJ_ROOT}")
@@ -15,9 +17,11 @@ RAW_DATA_DIR = DATA_DIR / "raw"
 INTERIM_DATA_DIR = DATA_DIR / "interim"
 PROCESSED_DATA_DIR = DATA_DIR / "processed"
 EXTERNAL_DATA_DIR = DATA_DIR / "external"
+SPLITS_DATA_DIR = DATA_DIR / "splits"
+
 
 MODELS_DIR = PROJ_ROOT / "models"
-
+PREDICT_MODELS_DIR = MODELS_DIR / "predict"
 REPORTS_DIR = PROJ_ROOT / "reports"
 FIGURES_DIR = REPORTS_DIR / "figures"
 

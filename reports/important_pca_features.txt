@@ -1,0 +1,19 @@
+perimeter_worst
+radius_worst
+concave points_mean
+area_worst
+concave points_worst
+perimeter_mean
+PC1_worse
+concavity_mean
+radius_mean
+concavity_worst
+area_se
+PC1_means
+PC1_standard error (se)
+texture_mean
+smoothness_worst
+area_mean
+compactness_worst
+symmetry_worst
+texture_worst
