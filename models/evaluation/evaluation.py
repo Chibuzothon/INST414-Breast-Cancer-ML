@@ -243,3 +243,25 @@ plt.title("Random Forest - SHAP Summary Plot")
 plt.tight_layout()
 plt.savefig(FIGURES_DIR / "rf_shap_summary_plot.png")
 plt.close()
+
+# Assuming you already have these variables from your code
+y_pred_rf = final_rf_pipeline.predict(X_test)  # Random Forest predictions
+y_pred_xgb = final_xgb_pipeline.predict(X_test)  # XGBoost predictions
+y_test = y_test  # True labels
+
+# Identify where the predictions failed
+failed_rf_predictions = X_test[(y_pred_rf != y_test)]  # Random Forest
+failed_xgb_predictions = X_test[(y_pred_xgb != y_test)]  # XGBoost
+
+# Add true and predicted labels to the failed predictions
+failed_rf_predictions['True_Label'] = y_test[(y_pred_rf != y_test)]
+failed_rf_predictions['Predicted_Label_RF'] = y_pred_rf[(y_pred_rf != y_test)]
+
+failed_xgb_predictions['True_Label'] = y_test[(y_pred_xgb != y_test)]
+failed_xgb_predictions['Predicted_Label_XGB'] = y_pred_xgb[(y_pred_xgb != y_test)]
+
+# Save the failed predictions for both models to CSV files
+failed_rf_predictions.to_csv(REPORTS_DIR/ 'failed_predictions_rf.csv', index=False)
+failed_xgb_predictions.to_csv(REPORTS_DIR/'failed_predictions_xgb.csv', index=False)
+
+print("Failed predictions have been saved to 'failed_predictions_rf.csv' and 'failed_predictions_xgb.csv'.")
